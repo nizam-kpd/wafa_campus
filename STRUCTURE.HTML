@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organizational Structure - Pang Wafa Alumni</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-deep: #0A192F;
+            --bg-charcoal: #121212;
+            --gold: #D4AF37;
+            --emerald: #50C878;
+            --text-main: #E0E0E0;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(212, 175, 55, 0.2);
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+        }
+
+        /* Navbar */
+        .navbar { 
+            background-color: rgba(10, 25, 47, 0.95); 
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 15px 0; 
+        }
+        .navbar-brand { font-weight: 700; color: var(--gold) !important; }
+        .nav-link { color: #fff !important; margin-right: 20px; transition: 0.3s; }
+        .nav-link:hover { color: var(--gold) !important; }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(18, 18, 18, 0.95)), 
+                        url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+        .page-header h1 { color: var(--gold); font-weight: 700; letter-spacing: 1px; }
+
+        /* Committee Section */
+        .committee-section { padding: 80px 0; background-color: var(--bg-charcoal); }
+        .section-title { text-align: center; margin-bottom: 60px; }
+        .section-title h2 { font-weight: 700; color: var(--gold); position: relative; padding-bottom: 15px; }
+        .section-title h2::after {
+            content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+            width: 80px; height: 3px; background: var(--emerald);
+        }
+
+        /* Roles Cards */
+        .role-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            border: 1px solid var(--glass-border);
+            margin-bottom: 30px;
+            transition: 0.4s ease;
+            height: 100%;
+        }
+        .role-card:hover { 
+            transform: translateY(-10px); 
+            border-color: var(--gold);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+        .role-icon {
+            width: 75px; height: 75px; 
+            background: linear-gradient(135deg, var(--gold), #b8860b);
+            color: #000;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 30px; margin: 0 auto 25px;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+        .role-card h4 { color: var(--gold); font-weight: 700; margin-bottom: 15px; }
+        .role-card p { font-size: 0.95rem; color: #bbb; line-height: 1.7; }
+
+        /* Executive List */
+        .executive-box {
+            background: linear-gradient(145deg, #162436, #0A192F);
+            color: #fff;
+            padding: 50px;
+            border-radius: 25px;
+            margin-top: 50px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+        }
+        .exec-title { color: var(--emerald); font-weight: 700; margin-bottom: 30px; text-align: center; text-transform: uppercase; letter-spacing: 2px; }
+        .exec-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; }
+        .exec-list li {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--glass-border);
+            padding: 12px 25px;
+            margin: 8px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            color: var(--gold);
+            transition: 0.3s;
+        }
+        .exec-list li:hover { background: var(--gold); color: #000; }
+
+        /* Advisory Box */
+        .advisory-box {
+            background: rgba(80, 200, 120, 0.05);
+            border: 1px solid var(--emerald);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .footer { 
+            background: var(--bg-deep); 
+            border-top: 1px solid var(--glass-border);
+            color: #888; padding: 40px 0; text-align: center; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PANG WAFA ALUMNI</a>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ABOUT.HTML">About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="STRUCTURE.HTML" style="color: var(--gold) !important;">Structure</a></li>
+                    <li class="nav-item"><a class="nav-link" href="PROJECTS.HTML">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="forms.html">Forms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>ഭരണസമിതി</h1>
+            <p style="color: var(--emerald); font-weight: 500;">സംഘടനയുടെ നേതൃത്വവും ചുമതലകളും</p>
+        </div>
+    </div>
+
+    <section class="committee-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>പ്രധാന ഭാരവാഹികൾ</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="role-card">
+                        <div class="role-icon"><i class="fas fa-user-shield"></i></div>
+                        <h4>പ്രസിഡന്റ്</h4>
+                        <p>സംഘടനയുടെ ഔദ്യോഗിക അധ്യക്ഷൻ. മീറ്റിംഗുകളിൽ അധ്യക്ഷത വഹിക്കുകയും ഭരണഘടനാനുസൃതമായ തീരുമാനങ്ങൾ എടുക്കുന്നതിന് നേതൃത്വം നൽകുകയും ചെയ്യുന്നു.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="role-card" style="border-top-color: var(--emerald);">
+                        <div class="role-icon" style="background: linear-gradient(135deg, var(--emerald), #2e8b57);"><i class="fas fa-file-contract"></i></div>
+                        <h4 style="color: var(--emerald);">സെക്രട്ടറി</h4>
+                        <p>സംഘടനയുടെ ദൈനംദിന പ്രവർത്തനങ്ങൾ ഏകോപിപ്പിക്കുന്നു. മിനിറ്റ്സ് തയ്യാറാക്കുക, അറിയിപ്പുകൾ നൽകുക, രേഖകൾ സൂക്ഷിക്കുക എന്നിവ പ്രധാന ചുമതലകൾ.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="role-card">
+                        <div class="role-icon"><i class="fas fa-chart-pie"></i></div>
+                        <h4>ട്രഷറർ</h4>
+                        <p>സാമ്പത്തിക ഇടപാടുകളുടെ പൂർണ്ണ ചുമതല. വരവ് ചെലവ് കണക്കുകൾ കൃത്യമായി സൂക്ഷിക്കുകയും വാർഷിക റിപ്പോർട്ട് അവതരിപ്പിക്കുകയും ചെയ്യുന്നു.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="executive-box">
+                <h3 class="exec-title">എക്സിക്യൂട്ടീവ് കമ്മിറ്റി</h3>
+                <p class="text-center mb-5" style="color: #ccc; max-width: 800px; margin: 0 auto;">അംഗങ്ങളിൽ നിന്നും തിരഞ്ഞെടുക്കപ്പെട്ട നിശ്ചിത എണ്ണം പ്രതിനിധികൾ ഉൾപ്പെടുന്നതാണ് എക്സിക്യൂട്ടീവ് കമ്മിറ്റി. സംഘടനയുടെ നയപരമായ തീരുമാനങ്ങൾ എടുക്കുന്നത് ഈ കമ്മിറ്റിയാണ്.</p>
+                
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <ul class="exec-list">
+                            <li><i class="fas fa-chevron-right mr-2"></i> വൈസ് പ്രസിഡന്റ്</li>
+                            <li><i class="fas fa-chevron-right mr-2"></i> ജോയിന്റ് സെക്രട്ടറി</li>
+                            <li><i class="fas fa-chevron-right mr-2"></i> വിഭാഗം കൺവീനർമാർ</li>
+                            <li><i class="fas fa-chevron-right mr-2"></i> കമ്മിറ്റി അംഗങ്ങൾ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="advisory-box">
+                <h5 class="font-weight-bold" style="color: var(--emerald);"><i class="fas fa-crown text-warning mr-2"></i>ഉപദേശക സമിതി</h5>
+                <p class="mb-0" style="color: #eee;">പാങ്ങ് വഫാ കാമ്പസിലെ ബഹുമാനപ്പെട്ട ഉസ്താദുമാരുടെ നേരിട്ടുള്ള മാർഗ്ഗനിർദ്ദേശത്തിലാണ് സംഘടന പ്രവർത്തിക്കുന്നത്.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Pang Wafa Campus First Batch

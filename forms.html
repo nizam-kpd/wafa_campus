@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forms & Downloads - Pang Wafa Alumni</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-deep: #0A192F;
+            --bg-charcoal: #121212;
+            --gold: #D4AF37;
+            --emerald: #50C878;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(212, 175, 55, 0.2);
+        }
+        
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: var(--bg-deep); 
+            color: #e0e0e0; 
+        }
+
+        /* Navbar */
+        .navbar { 
+            background-color: rgba(10, 25, 47, 0.95); 
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 15px 0; 
+        }
+        .navbar-brand { font-weight: 700; color: var(--gold) !important; }
+        .nav-link { color: #fff !important; margin-right: 20px; transition: 0.3s; }
+        .nav-link:hover { color: var(--gold) !important; }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(18, 18, 18, 0.9)), 
+                        url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+        .page-header h1 { color: var(--gold); font-weight: 700; }
+
+        .form-section { padding: 60px 0; background-color: var(--bg-charcoal); }
+        
+        /* Premium Form Card */
+        .form-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: 0.3s;
+        }
+        .form-card:hover { border-color: var(--gold); }
+
+        .form-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--glass-border);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .form-title { color: var(--emerald); font-weight: 700; margin: 0; }
+        
+        /* Form Content for Printing */
+        .form-content {
+            background: #ffffff;
+            color: #333;
+            padding: 25px;
+            border-radius: 8px;
+            line-height: 2;
+            white-space: pre-line;
+            border: 1px solid #ddd;
+        }
+
+        .btn-download {
+            background-color: transparent;
+            color: var(--gold);
+            border: 1px solid var(--gold);
+            border-radius: 50px;
+            padding: 8px 25px;
+            font-weight: 600;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+        }
+        .btn-download:hover { 
+            background-color: var(--gold); 
+            color: #000; 
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+
+        .badge-info { background-color: var(--emerald); color: #000; }
+
+        .footer { 
+            background: var(--bg-deep); 
+            border-top: 1px solid var(--glass-border);
+            color: #888; 
+            padding: 40px 0; 
+            text-align: center; 
+        }
+
+        /* Hide everything except form when printing */
+        @media print {
+            body { background: white; color: black; }
+            .navbar, .page-header, .footer, .btn-download { display: none; }
+            .form-card { border: none; box-shadow: none; padding: 0; background: white; }
+            .form-content { border: 1px solid #000; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PANG WAFA ALUMNI</a>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ABOUT.HTML">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="PROJECTS.HTML">Projects</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="forms.html" style="color: var(--gold) !important;">Forms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>അപേക്ഷാ ഫോമുകൾ</h1>
+            <p style="color: var(--emerald);">വായ്പയ്ക്കും അംഗത്വത്തിനുമുള്ള ഔദ്യോഗിക ഫോമുകൾ താഴെ നൽകുന്നു</p>
+        </div>
+    </div>
+
+    <section class="form-section">
+        <div class="container">
+            
+            <div class="form-card">
+                <div class="form-header">
+                    <h4 class="form-title">ഫോം 1: വായ്പാ അപേക്ഷാ ഫോം</h4>
+                    <button class="btn btn-download" onclick="window.print()"><i class="fas fa-print mr-2"></i>Print Form</button>
+                </div>
+                <div class="form-content">
+                    <strong>വിഷയം: വായ്പയ്ക്കുള്ള അപേക്ഷ</strong>
+                    
+                    അപേക്ഷകന്റെ പേര്: ............................................................
+                    അഡ്രസ്സ്: ............................................................................
+                    ഫോൺ നമ്പർ: .....................................................................
+                    
+                    ആവശ്യമായ തുക: ........................ രൂപ.
+                    വായ്പ ആവശ്യമായ സാഹചര്യം: ........................................................
+                    തിരിച്ചടവ് കാലാവധി: ........................ മാസങ്ങൾ.
+                    
+                    മേൽ പറഞ്ഞ തുക കൃത്യസമയത്ത് തിരിച്ചടക്കാമെന്ന് ഞാൻ ഉറപ്പു നൽകുന്നു.
+                    
+                    ഒപ്പ്: ........................
+                </div>
+            </div>
+
+            <div class="form-card">
+                <div class="form-header">
+                    <h4 class="form-title">ഫോം 2: അംഗത്വ ഫോം</h4>
+                    <button class="btn btn-download" onclick="window.print()"><i class="fas fa-print mr-2"></i>Print Form</button>
+                </div>
+                <div class="form-content">
+                    പാങ്ങ് വഫാ കാമ്പസ് ഫസ്റ്റ് ബാച്ച് അസോസിയേഷനിൽ അംഗമാവാൻ ഞാൻ ആഗ്രഹിക്കുന്നു. സംഘടനയുടെ ഭരണഘടനയും നിയമങ്ങളും അനുസരിക്കാൻ ഞാൻ ബാധ്യസ്ഥനായിരിക്കും.
+                    
+                    പേര്: ............................................................
+                    ബാച്ച്: ........................
+                    സ്ഥലം: ............................................................
+                    വാട്സാപ്പ് നമ്പർ: ................................................
+                    
+                    തിയ്യതി: ........................                                ഒപ്പ്: ........................
+                </div>
+            </div>
+
+            <div class="form-card">
+                <div class="form-header">
+                    <h4 class="form-title">ഫോം 3: "തആവുൻ" അംഗത്വ ഫോം</h4>
+                    <button class="btn btn-download" onclick="window.print()"><i class="fas fa-print mr-2"></i>Print Form</button>
+                </div>
+                <div class="form-content">
+                    പാങ്ങ് വഫാ കാമ്പസ് നടത്തുന്ന "Ta'awun" പദ്ധതിയിൽ അംഗമാവാൻ താല്പര്യപ്പെടുന്നു. ഇതിന്റെ നിയമങ്ങൾ പരിപൂർണ്ണമായി ഞാൻ അനുസരിക്കും. താഴെ പറയുന്നവരുടെ ജാമ്യത്തിൽ എന്നെ ഈ പദ്ധതിയിൽ അംഗമാക്കണമെന്ന് അഭ്യർത്ഥിക്കുന്നു.
+                    
+                    പേര്: ........................................
+                    അഡ്രസ്സ്: ...................................
+                    ഫോൺ: .......................................
+                    
+                    ജാമ്യം നിൽക്കുന്നവർ:
+                    1. ........................................
+                    2. ........................................
+                </div>
+            </div>
+
+            <div class="form-card">
+                <div class="form-header">
+                    <h4 class="form-title">ഫോം 4: ജാമ്യക്കാരൻ അയക്കേണ്ട സന്ദേശം</h4>
+                    <span class="badge badge-info p-2">Voice/Text Format</span>
+                </div>
+                <div class="form-content" style="background: #f0fff4; border-color: var(--emerald);">
+                    ".................... എന്ന വ്യക്തി പരിപൂർണ്ണ വിശ്വസ്തനും പണം ഇടപാട് നടത്തുന്നതിൽ കൃത്യത പുലർത്തുന്നവനും സഹകരണ മനോഭാവം ഉള്ളവനും ആണെന്ന് ഞാൻ സാക്ഷി നിൽക്കുന്നു."
+                </div>
+                <p class="small text-muted mt-3 text-center">
+                    <i class="fas fa-info-circle mr-1"></i> വായ്പ അപേക്ഷിക്കുമ്പോൾ ജാമ്യക്കാർ കമ്മിറ്റിക്ക് അയച്ചു കൊടുക്കേണ്ട ഫോർമാറ്റ് ആണിത്.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Pang Wafa Campus First Batch Alumni Association.</p>
+            <p style="font-size: 0.8rem; letter-spacing: 1px;">PREMIUM DARK UI DESIGN</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

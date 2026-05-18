@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects - Pang Wafa Alumni</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-deep: #0A192F;
+            --bg-charcoal: #121212;
+            --gold: #D4AF37;
+            --emerald: #50C878;
+            --text-main: #E0E0E0;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(212, 175, 55, 0.2);
+        }
+        
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: var(--bg-deep); 
+            color: var(--text-main); 
+        }
+
+        /* Navbar */
+        .navbar { 
+            background-color: rgba(10, 25, 47, 0.95); 
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 15px 0; 
+        }
+        .navbar-brand { font-weight: 700; color: var(--gold) !important; }
+        .nav-link { color: #fff !important; margin-right: 20px; transition: 0.3s; }
+        .nav-link:hover { color: var(--gold) !important; }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(18, 18, 18, 0.9)), 
+                        url('https://images.unsplash.com/photo-1541976534920-80a182747682?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+        .page-header h1 { color: var(--gold); font-weight: 700; }
+
+        .project-section { padding: 80px 0; background-color: var(--bg-charcoal); }
+        
+        /* Main Project Card (Ta'awun) */
+        .main-project-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 50px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            border-top: 4px solid var(--gold);
+        }
+        .main-project-card h3 { color: var(--emerald); font-weight: 700; margin-bottom: 25px; border-bottom: 1px solid var(--glass-border); padding-bottom: 15px; }
+        
+        /* Sub Projects Grid */
+        .sub-project-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            height: 100%;
+            transition: 0.4s ease;
+            border: 1px solid var(--glass-border);
+        }
+        .sub-project-card:hover { 
+            transform: translateY(-10px); 
+            border-color: var(--gold);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+        }
+        .sub-project-card h4 { color: var(--gold); font-weight: 700; margin-bottom: 15px; }
+
+        /* Icon Badge */
+        .icon-badge {
+            width: 55px; height: 55px; 
+            background: linear-gradient(135deg, var(--gold), #b8860b);
+            color: #000;
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
+            font-size: 22px; margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .rule-list { list-style: none; padding-left: 0; }
+        .rule-list li { margin-bottom: 12px; padding-left: 30px; position: relative; color: #ccc; }
+        .rule-list li::before { 
+            content: '\f058'; font-family: 'Font Awesome 5 Free'; font-weight: 900; 
+            position: absolute; left: 0; color: var(--emerald); 
+            text-shadow: 0 0 8px rgba(80, 200, 120, 0.5);
+        }
+
+        /* Future Projects Box */
+        .future-box {
+            background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+            border-left: 5px solid var(--gold);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .footer { 
+            background: var(--bg-deep); 
+            border-top: 1px solid var(--glass-border);
+            color: #888; padding: 40px 0; text-align: center; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PANG WAFA ALUMNI</a>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ABOUT.HTML">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wings.html">Wings</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="PROJECTS.HTML" style="color: var(--gold) !important;">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="forms.html">Forms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>സംഘടനയുടെ പദ്ധതികൾ</h1>
+            <p style="color: var(--emerald); font-weight: 500;">സാമൂഹികവും സാമ്പത്തികവുമായ ഉന്നമനം ലക്ഷ്യമിട്ടുള്ള കർമ്മപദ്ധതികൾ</p>
+        </div>
+    </div>
+
+    <section class="project-section">
+        <div class="container">
+            
+            <div class="main-project-card">
+                <h3>താആവുൻ (Ta'awun) പദ്ധതി</h3>
+                <p style="font-size: 1.1rem;">ഓരോ മാസവും അംഗങ്ങളിൽ നിന്ന് നിശ്ചിത സംഖ്യ പിരിച്ച് ഡെപ്പോസിറ്റായി സൂക്ഷിക്കുകയും, അംഗങ്ങൾക്ക് ആവശ്യമുണ്ടാകുമ്പോൾ വായ്പയായി നൽകുകയും ചെയ്യുന്ന പദ്ധതിയാണിത്.</p>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h5 style="color: var(--gold);"><i class="fas fa-gavel mr-2"></i>പ്രധാന നിയമങ്ങൾ:</h5>
+                        <ul class="rule-list mt-4">
+                            <li>മാസം 100 രൂപയിൽ കുറയാത്ത സംഖ്യ അടയ്ക്കണം.</li>
+                            <li>സാധാരണ ആവശ്യങ്ങൾക്ക് ഡെപ്പോസിറ്റ് ചെയ്ത തുകയേക്കാൾ കുറഞ്ഞ തുക വായ്പയായി ലഭിക്കും.</li>
+                            <li>പ്രത്യേക ആവശ്യങ്ങൾക്ക് അടച്ച സംഖ്യയുടെ 3 ഇരട്ടി വരെ വായ്പ ലഭിക്കുന്നതാണ്.</li>
+                            <li>വായ്പ ലഭിക്കാൻ അംഗങ്ങളിൽ പെട്ട രണ്ടാളുകൾ ജാമ്യം നിൽക്കണം.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="color: var(--gold);"><i class="fas fa-star mr-2"></i>പ്രത്യേക പരിഗണന ലഭിക്കുന്നവ:</h5>
+                        <ul class="rule-list mt-4">
+                            <li>ആശുപത്രി കേസുകൾ (മാതാപിതാക്കൾ, മക്കൾ).</li>
+                            <li>ഭാര്യയുടെ പ്രസവം.</li>
+                            <li>ഭവന നിർമ്മാണം, പഠനം, വിദേശയാത്ര.</li>
+                            <li>മക്കളുടെ വിവാഹം.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="sub-project-card">
+                        <div class="icon-badge"><i class="fas fa-user-friends"></i></div>
+                        <h4>കൂട്ടുകാരനൊരു സഹായ പദ്ധതി</h4>
+                        <p>വിശ്വസ്തരായ അംഗങ്ങളെ ഉൾപ്പെടുത്തി മാസന്തോറും നിശ്ചിത സംഖ്യ സമാഹരിക്കുകയും ഒരാൾക്ക് കൈമാറുകയും ചെയ്യുന്ന പദ്ധതി. മറ്റുള്ളവർക്ക് ഉപകാരപ്പെടുക എന്നതാണ് ഇതിന്റെ ലക്ഷ്യം.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="sub-project-card">
+                        <div class="icon-badge"><i class="fas fa-praying-hands"></i></div>
+                        <h4>കൈപിടിക്കാം സ്വർഗ്ഗവാതിലിൽ</h4>
+                        <p>അംഗങ്ങൾ മരണപ്പെട്ടാൽ അവർക്കുവേണ്ടി ദുആ ചെയ്യുക, ഖത്തമുൽ ഖുർആൻ ഓതുക, വീട് സന്ദർശിക്കുക തുടങ്ങിയ ആത്മീയ പ്രവർത്തനങ്ങൾ ഏകോപിപ്പിക്കുന്നു.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                    <div class="sub-project-card">
+                        <div class="icon-badge"><i class="fas fa-coins"></i></div>
+                        <h4>ഭവന / വിവാഹ / പ്രസവ പദ്ധതി</h4>
+                        <p>പ്രത്യേക ലക്ഷ്യങ്ങൾക്കായി മാസത്തവണകളായി നിക്ഷേപിക്കാവുന്ന പദ്ധതി. 6 മാസം മുമ്പ് അറിയിച്ചാൽ അടച്ചതിന്റെ ഇരട്ടി തുക വരെ വായ്പയായി ലഭിക്കും.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                    <div class="sub-project-card">
+                        <div class="icon-badge"><i class="fas fa-mobile-alt"></i></div>
+                        <h4>തവാസ്സൽ പദ്ധതി</h4>
+                        <p>ആറുമാസത്തിലൊരിക്കൽ പരസ്പരം വിളിക്കുന്ന ക്യാമ്പയിനും വർഷത്തിലൊരിക്കൽ അംഗങ്ങളുടെയും കുടുംബങ്ങളുടെയും ഒത്തുചേരലും വിനോദയാത്രകളും.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="future-box mt-5">
+                <h5 style="color: var(--gold); font-weight: 700;"><i class="fas fa-rocket mr-2"></i>ഭാവി പദ്ധതികൾ</h5>
+                <p class="mb-0" style="color: var(--text-main);">അനുയോജ്യമായ രീതിയിലുള്ള ബിസിനസ് സംരംഭങ്ങൾ ആരംഭിക്കാനും സാമൂഹിക സേവനത്തിന് ഉതകുന്ന വ്യത്യസ്ത കോഴ്സുകൾ നൽകാനും സംഘടന ലക്ഷ്യമിടുന്നു.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Pang Wafa Campus First Batch Alumni Association.</p>
+            <p style="font-size: 0.75rem; letter-spacing: 1px; color: var(--gold);">PREMIUM UI/UX DESIGN</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
