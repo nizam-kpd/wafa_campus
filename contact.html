@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us - Pang Wafa Alumni</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-deep: #0A192F;
+            --bg-charcoal: #121212;
+            --gold: #D4AF37;
+            --emerald: #50C878;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(212, 175, 55, 0.2);
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-deep);
+            color: #E0E0E0;
+        }
+
+        /* Navbar */
+        .navbar { 
+            background-color: rgba(10, 25, 47, 0.95); 
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 15px 0; 
+        }
+        .navbar-brand { font-weight: 700; color: var(--gold) !important; }
+        .nav-link { color: #fff !important; margin-right: 20px; transition: 0.3s; }
+        .nav-link:hover { color: var(--gold) !important; }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(18, 18, 18, 0.9)), 
+                        url('https://images.unsplash.com/photo-1516387933999-ed33b5ec1ed2?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .contact-section { padding: 80px 0; background-color: var(--bg-charcoal); }
+
+        /* Contact Card Style */
+        .contact-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            height: 100%;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        .info-icon {
+            width: 50px; height: 50px;
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-right: 20px;
+            border: 1px solid var(--glass-border);
+        }
+
+        /* Form Styling */
+        .form-group label { color: var(--gold); font-weight: 500; }
+        .form-control {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--glass-border);
+            color: #fff;
+            border-radius: 10px;
+            padding: 12px;
+        }
+        .form-control:focus {
+            background: rgba(255,255,255,0.08);
+            border-color: var(--emerald);
+            color: #fff;
+            box-shadow: none;
+        }
+
+        .btn-submit {
+            background: var(--gold);
+            color: #000;
+            font-weight: 700;
+            border-radius: 50px;
+            padding: 12px 30px;
+            width: 100%;
+            transition: 0.3s;
+            border: none;
+            text-transform: uppercase;
+        }
+        .btn-submit:hover {
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .footer { 
+            background: var(--bg-deep); 
+            border-top: 1px solid var(--glass-border);
+            color: #888; padding: 40px 0; text-align: center; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PANG WAFA ALUMNI</a>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ABOUT.HTML">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wings.html">Wings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="PROJECTS.HTML">Projects</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="contact.html" style="color: var(--gold) !important;">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1 style="color: var(--gold);">ബന്ധപ്പെടുക</h1>
+            <p style="color: var(--emerald);">എന്തെങ്കിലും സംശയങ്ങളോ നിർദ്ദേശങ്ങളോ ഉണ്ടെങ്കിൽ താഴെ പറയുന്ന മാർഗ്ഗങ്ങളിലൂടെ ഞങ്ങളെ അറിയിക്കാം</p>
+        </div>
+    </div>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mb-4">
+                    <div class="contact-card">
+                        <h3 style="color: var(--gold); margin-bottom: 30px;">വിവരങ്ങൾ</h3>
+                        
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h6 style="color: var(--emerald);">ആസ്ഥാനം</h6>
+                                <p class="mb-0">പാങ്ങ് വഫാ കാമ്പസ്, മലപ്പുറം</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h6 style="color: var(--emerald);">ഇമെയിൽ</h6>
+                                <p class="mb-0">info@pangwafalumni.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h6 style="color: var(--emerald);">ഫോൺ</h6>
+                                <p class="mb-0">+91 0000 000 000</p>
+                            </div>
+                        </div>
+
+                        <hr style="border-color: var(--glass-border);">
+                        <p class="small" style="color: #888;">പ്രവർത്തന സമയം: തിങ്കൾ - ശനി (9:00 AM - 5:00 PM)</p>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="contact-card">
+                        <h3 style="color: var(--gold); margin-bottom: 30px;">സന്ദേശങ്ങൾ അയക്കുക</h3>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label>പേര്</label>
+                                    <input type="text" class="form-control" placeholder="നിങ്ങളുടെ പേര്">
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label>ഫോൺ നമ്പർ</label>
+                                    <input type="text" class="form-control" placeholder="ഫോൺ നമ്പർ">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>വിഷയം</label>
+                                <input type="text" class="form-control" placeholder="സന്ദേശത്തിന്റെ വിഷയം">
+                            </div>
+                            <div class="form-group">
+                                <label>സന്ദേശം</label>
+                                <textarea class="form-control" rows="4" placeholder="നിങ്ങൾക്ക് പറയാനുള്ളത് ഇവിടെ ടൈപ്പ് ചെയ്യുക..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit mt-3">സന്ദേശം അയക്കുക</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Pang Wafa Campus First Batch Alumni Association.</p>
+            <p style="font-size: 0.7rem; letter-spacing: 2px; color: var(--gold);">PREMIUM DARK MODE UI</p>
+        </div>
+    </footer>
+
+</body>
+</html>

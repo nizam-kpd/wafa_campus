@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - Pang Wafa Alumni</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-deep: #0A192F;
+            --bg-charcoal: #121212;
+            --gold: #D4AF37;
+            --emerald: #50C878;
+            --text-main: #E0E0E0;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(212, 175, 55, 0.2);
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            overflow-x: hidden;
+        }
+
+        /* Navbar Styling */
+        .navbar { 
+            background-color: rgba(10, 25, 47, 0.95); 
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 15px 0; 
+        }
+        .navbar-brand { 
+            font-weight: 700; 
+            color: var(--gold) !important; 
+            letter-spacing: 1px;
+        }
+        .nav-link { color: #fff !important; margin-right: 20px; transition: 0.3s; }
+        .nav-link:hover { color: var(--gold) !important; }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(18, 18, 18, 0.9)), 
+                        url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+        .page-header h1 { color: var(--gold); font-weight: 700; }
+
+        /* About Section */
+        .about-section { padding: 80px 0; background-color: var(--bg-charcoal); }
+        
+        /* Glassmorphism Card Style */
+        .info-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid var(--glass-border);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .info-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+        .info-card h3 {
+            color: var(--emerald);
+            font-weight: 700;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--glass-border);
+            padding-bottom: 10px;
+        }
+
+        .info-list { list-style: none; padding: 0; }
+        .info-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            display: flex;
+            align-items: center;
+        }
+        .info-list li i { 
+            color: var(--gold); 
+            margin-right: 15px; 
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+        }
+
+        /* Constitution Box (High-End Look) */
+        .constitution-box {
+            background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid var(--gold);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .constitution-box i { 
+            font-size: 50px; 
+            color: var(--gold); 
+            margin-bottom: 20px; 
+            filter: drop-shadow(0 0 5px var(--gold));
+        }
+
+        /* Footer */
+        .footer { 
+            background: var(--bg-deep); 
+            border-top: 1px solid var(--glass-border);
+            color: #888; 
+            padding: 40px 0; 
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PANG WAFA ALUMNI</a>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="ABOUT.HTML" style="color: var(--gold) !important;">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="PROJECTS.HTML">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="forms.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>ഞങ്ങളെക്കുറിച്ച്</h1>
+            <p style="color: var(--emerald); font-weight: 500;">സംഘടനയുടെ രൂപീകരണവും ഭരണഘടനയും</p>
+        </div>
+    </div>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="info-card">
+                        <h3>സംഘടനയുടെ രൂപീകരണം</h3>
+                        <p>പാങ്ങ് വാഫാ കാമ്പസിൽ നിന്നും 2022-ൽ പഠനം പൂർത്തിയാക്കി പുറത്തിറങ്ങിയ പ്രഥമ ബാച്ച് വിദ്യാർത്ഥികളുടെ കൂട്ടായ്മയാണിത്. അംഗങ്ങൾക്കിടയിൽ ആജീവനാന്തം സാഹോദര്യവും പരസ്പര സഹകരണവും നിലനിർത്തുക എന്ന മഹത്തായ ലക്ഷ്യത്തോടെയാണ് ഈ സംഘടന രൂപീകരിച്ചിരിക്കുന്നത്.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>അടിസ്ഥാന വിവരങ്ങൾ</h3>
+                        <ul class="info-list">
+                            <li><i class="fas fa-tag"></i> <strong>പേര്:</strong> പാങ്ങ് വഫാ കാമ്പസ് ഫസ്റ്റ് ബാച്ച് അസോസിയേഷൻ</li>
+                            <li><i class="fas fa-map-marker-alt"></i> <strong>ആസ്ഥാനം:</strong> പാങ്ങ് വഫാ കാമ്പസ്, മലപ്പുറം</li>
+                            <li><i class="fas fa-flag"></i> <strong>ചിഹ്നം:</strong> അസോസിയേഷൻ അംഗീകരിച്ച ഔദ്യോഗിക ചിഹ്നം</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="constitution-box">
+                        <i class="fas fa-file-signature"></i>
+                        <h3 style="color: var(--gold);">ഭരണഘടന</h3>
+                        <p>സംഘടനയുടെ സുഗമമായ പ്രവർത്തനത്തിനായി കൃത്യമായ നിയമാവലികൾ ഉൾക്കൊള്ളുന്ന ഒരു ഭരണഘടന തയ്യാറാക്കിയിട്ടുണ്ട്. അംഗത്വ മാനദണ്ഡങ്ങൾ, ഭാരവാഹികളുടെ ചുമതലകൾ, ഫണ്ട് വിനിയോഗം എന്നിവ ഇതിൽ കൃത്യമായി പ്രതിപാദിക്കുന്നു.</p>
+                        <hr style="border-color: rgba(212, 175, 55, 0.2);">
+                        <p>

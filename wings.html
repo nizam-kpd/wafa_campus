@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wings & Departments - Pang Wafa Alumni</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-deep: #0A192F;
+            --bg-charcoal: #121212;
+            --gold: #D4AF37;
+            --emerald: #50C878;
+            --text-main: #E0E0E0;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(212, 175, 55, 0.2);
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar { 
+            background-color: rgba(10, 25, 47, 0.95); 
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 15px 0; 
+        }
+        .navbar-brand { font-weight: 700; color: var(--gold) !important; }
+        .nav-link { color: #fff !important; margin-right: 20px; transition: 0.3s; }
+        .nav-link:hover { color: var(--gold) !important; }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(18, 18, 18, 0.9)), 
+                        url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+        .page-header h1 { color: var(--gold); font-weight: 700; }
+
+        /* Wings Section */
+        .wings-section { padding: 80px 0; background-color: var(--bg-charcoal); }
+        
+        /* Premium Wing Card */
+        .wing-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border: 1px solid var(--glass-border);
+            transition: 0.4s ease;
+            text-align: center;
+            height: 100%;
+        }
+        .wing-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+        }
+        
+        .wing-icon {
+            font-size: 45px;
+            color: var(--gold);
+            margin-bottom: 25px;
+            display: inline-block;
+            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.4));
+        }
+
+        .wing-card h3 {
+            color: var(--emerald);
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .wing-card p {
+            color: #ccc;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        /* List Styling inside Card */
+        .responsibility-list {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .responsibility-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+        }
+        .responsibility-list li i {
+            color: var(--gold);
+            margin-right: 10px;
+            font-size: 0.7rem;
+        }
+
+        .footer { 
+            background: var(--bg-deep); 
+            border-top: 1px solid var(--glass-border);
+            color: #888; padding: 40px 0; text-align: center; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PANG WAFA ALUMNI</a>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ABOUT.HTML">About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="wings.html" style="color: var(--gold) !important;">Wings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="PROJECTS.HTML">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="STRUCTURE.HTML">Structure</a></li>
+                    <li class="nav-item"><a class="nav-link" href="forms.html">Forms</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>വിഭാഗങ്ങൾ (Wings)</h1>
+            <p style="color: var(--emerald); font-weight: 500;">പ്രവർത്തനങ്ങൾ കാര്യക്ഷമമാക്കുന്നതിനുള്ള വിവിധ വിംഗുകൾ</p>
+        </div>
+    </div>
+
+    <section class="wings-section">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wing-card">
+                        <div class="wing-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                        <h3>ഫിനാൻസ് വിംഗ്</h3>
+                        <p>സംഘടനയുടെ സാമ്പത്തിക സമാഹരണവും വിനിയോഗവും കൈകാര്യം ചെയ്യുന്ന വിഭാഗം.</p>
+                        <ul class="responsibility-list">
+                            <li><i class="fas fa-circle"></i> തആവുൻ ഫണ്ട് മാനേജ്‌മെന്റ്</li>
+                            <li><i class="fas fa-circle"></i> പ്രതിമാസ വരിസംഖ്യ പിരിവ്</li>
+                            <li><i class="fas fa-circle"></i> വായ്പാ വിതരണം</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wing-card">
+                        <div class="wing-icon"><i class="fas fa-book-reader"></i></div>
+                        <h3>അക്കാദമിക് വിംഗ്</h3>
+                        <p>അംഗങ്ങളുടെ വൈജ്ഞാനികമായ വളർച്ചയും കോഴ്സുകളും ഏകോപിപ്പിക്കുന്നു.</p>
+                        <ul class="responsibility-list">
+                            <li><i class="fas fa-circle"></i> സ്റ്റഡി ക്ലാസ്സുകൾ</li>
+                            <li><i class="fas fa-circle"></i> പുസ്തക പ്രസിദ്ധീകരണങ്ങൾ</li>
+                            <li><i class="fas fa-circle"></i> കരിയർ ഗൈഡൻസ്</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wing-card">
+                        <div class="wing-icon"><i class="fas fa-bullhorn"></i></div>
+                        <h3>മീഡിയ വിംഗ്</h3>
+                        <p>സംഘടനയുടെ പ്രചാരണ പ്രവർത്തനങ്ങളും വാർത്താ വിനിമയങ്ങളും നടത്തുന്നു.</p>
+                        <ul class="responsibility-list">
+                            <li><i class="fas fa-circle"></i> സോഷ്യൽ മീഡിയ മാനേജ്‌മെന്റ്</li>
+                            <li><i class="fas fa-circle"></i> പോസ്റ്റർ ഡിസൈനിംഗ്</li>
+                            <li><i class="fas fa-circle"></i> പരിപാടികളുടെ റിപ്പോർട്ടിംഗ്</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wing-card">
+                        <div class="wing-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>വെൽഫെയർ വിംഗ്</h3>
+                        <p>അംഗങ്ങളുടെ ക്ഷേമത്തിനും സേവന പ്രവർത്തനങ്ങൾക്കും മുൻഗണന നൽകുന്നു.</p>
+                        <ul class="responsibility-list">
+                            <li><i class="fas fa-circle"></i> ആശ്വാസ കിറ്റ് വിതരണം</li>
+                            <li><i class="fas fa-circle"></i> ചികിത്സാ സഹായ ഏകോപനം</li>
+                            <li><i class="fas fa-circle"></i> മരണാനന്തര കർമ്മങ്ങൾ</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wing-card">
+                        <div class="wing-icon"><i class="fas fa-calendar-check"></i></div>
+                        <h3>ഇവന്റ് വിംഗ്</h3>
+                        <p>ഒത്തുചേരലുകൾ, യാത്രകൾ, മീറ്റിംഗുകൾ എന്നിവ സംഘടിപ്പിക്കുന്നു.</p>
+                        <ul class="responsibility-list">
+                            <li><i class="fas fa-circle"></i> വാർഷിക കുടുംബ സംഗമം</li>
+                            <li><i class="fas fa-circle"></i> ടൂർ പ്രോഗ്രാമുകൾ</li>
+                            <li><i class="fas fa-circle"></i> മീറ്റിംഗ് ക്രമീകരണങ്ങൾ</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wing-card">
+                        <div class="wing-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>ഐടി വിംഗ്</h3>
+                        <p>സാങ്കേതികമായ പ്രവർത്തനങ്ങളും ഡിജിറ്റൽ സംവിധാനങ്ങളും ഏകോപിപ്പിക്കുന്നു.</p>
+                        <ul class="responsibility-list">
+                            <li><i class="fas fa-circle"></i> വെബ്സൈറ്റ് മെയിന്റനൻസ്</li>
+                            <li><i class="fas fa-circle"></i> ഡാറ്റാ മാനേജ്‌മെന്റ്</li>
+                            <li><i class="fas fa-circle"></i> ഓൺലൈൻ വോട്ടിംഗ് സിസ്റ്റം</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Pang Wafa Campus First Batch Alumni Association.</p>
+            <p style="font-size: 0.75rem; letter-spacing: 2px; color: var(--gold);">DEPARTMENTAL DASHBOARD DESIGN</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
